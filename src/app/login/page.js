@@ -1,3 +1,8 @@
+export const metadata = {
+  title: "Login | Md Najmul Hossen",
+  description: "Login page for Md Najmul Hossen",
+};
+
 const LoginPage = () => {
   return (
     <div>

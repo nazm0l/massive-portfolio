@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <div className="h-[70px] bg-green-300 overflow-hidden flex">
+    <div className="h-[70px] bg-gradient-to-r from-[#ff1e1e] to-[#ff8079] text-white overflow-hidden flex">
       <div className="container mx-auto flex justify-between items-center">
         <div>
           {/* <Image src="/logo.png" alt="logo" width={50} height={50} /> */}
