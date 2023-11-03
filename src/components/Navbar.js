@@ -15,6 +15,7 @@ const Navbar = () => {
           <ul className="flex gap-10 font-semibold text-lg">
             <Link href="/">Home</Link>
             <Link href="projects">Projects</Link>
+            <Link href="components">Components</Link>
             <Link href="about">About</Link>
             <Link href="login">Login</Link>
           </ul>
