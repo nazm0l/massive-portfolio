@@ -1,7 +1,7 @@
 export default function Home() {
   return (
-    <main className="bg-[#ff8079]">
-      <div className="container mx-auto">
+    <main className="">
+      <div className="container mx-auto p-24">
         <h2>Hello World</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum quod

@@ -6,7 +6,7 @@ export const metadata = {
 
 const AboutPage = () => {
   return (
-    <div className="container p-5 grid place-items-center">
+    <div className="container mx-auto p-5 grid place-items-center">
       <div>
         {/* about me */}
         <div className="text-center">

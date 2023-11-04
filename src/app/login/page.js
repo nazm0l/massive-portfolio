@@ -7,7 +7,7 @@ export const metadata = {
 
 const LoginPage = () => {
   return (
-    <div className="container p-5 min-h-[calc(100vh-220px)] grid place-items-center">
+    <div className="container mx-auto p-5 min-h-[calc(100vh-220px)] grid place-items-center">
       <LoginProvider />
     </div>
   );
