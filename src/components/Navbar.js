@@ -23,7 +23,7 @@ const Navbar = () => {
         >
           <Image
             className="md:hidden"
-            src="list.svg"
+            src={navMenu ? "/cross.svg" : "/list.svg"}
             alt="menu"
             width={30}
             height={30}
