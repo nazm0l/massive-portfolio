@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export const metadata = {
   title: "About | Md Najmul Hossen",
   description:
@@ -16,40 +18,114 @@ const AboutPage = () => {
         <div>
           {/* about me */}
           <div className="text-center">
-            <p className="text-lg mt-2">
-              I am a full-stack developer from Bangladesh. I am a student of
-              Computer Science and Engineering at Green University of
-              Bangladesh.
+            <p className="text-lg mt-2 bg-green-400 px-4 rounded-xl">
+              I am a full-stack developer from Bangladesh. I am still learning.
+              Hope i will contribute for the industry .
             </p>
 
-            <div className="flex justify-between">
+            <div className="flex justify-between gap-5 my-10">
               {/* skills */}
 
-              <div>
+              <div className="border shadow-md p-5">
                 <h1 className="text-2xl font-bold mt-10">Skills</h1>
                 <p className="text-lg mt-2">
                   I have experience in the following technologies:
                 </p>
-                <ul className="mt-2">
-                  <li>HTML</li>
-                  <li>CSS</li>
-                  <li>JavaScript</li>
-                  <li>React</li>
-                  <li>Next.js</li>
-                  <li>Node.js</li>
-                  <li>Express.js</li>
-                  <li>SQL</li>
-                  <li>Git</li>
-                  <li>GitHub</li>
-                  <li>Python</li>
-                  <li>Java</li>
-                  <li>C</li>
-                  <li>C++</li>
+                <ul className="mt-2 flex gap-2 mt-5">
+                  <li>
+                    <Image
+                      src="./images/html-icon.svg"
+                      alt="html"
+                      width={30}
+                      height={30}
+                    />
+                  </li>
+                  <li>
+                    <Image
+                      src="./images/css-icon.svg"
+                      alt="css"
+                      width={30}
+                      height={30}
+                      className="mx-2"
+                    />
+                  </li>
+                  <li>
+                    <Image
+                      src="./images/js-icon.svg"
+                      alt="javascript"
+                      width={30}
+                      height={30}
+                    />
+                  </li>
+                  <li>
+                    <Image
+                      src="./images/react-js-icon.svg"
+                      alt="react"
+                      width={30}
+                      height={30}
+                    />
+                  </li>
+                  <li>
+                    <Image
+                      src="./images/nodejs-icon.svg"
+                      alt="node"
+                      width={30}
+                      height={30}
+                    />
+                  </li>
+                  <li>
+                    <Image
+                      src="./images/express-js-icon.svg"
+                      alt="mongodb"
+                      width={30}
+                      height={30}
+                    />
+                  </li>
+                  <li>
+                    <Image
+                      src="./images/postgresql-icon.svg"
+                      alt="mongodb"
+                      width={30}
+                      height={30}
+                    />
+                  </li>
+                  <li>
+                    <Image
+                      src="/images/mongo-db-icon.png"
+                      alt="mongodb"
+                      width={30}
+                      height={30}
+                    />
+                  </li>
+                  <li>
+                    <Image
+                      src="./images/github-icon.svg"
+                      alt="mongodb"
+                      width={30}
+                      height={30}
+                    />
+                  </li>
+                  <li>
+                    <Image
+                      src="./images/c-icon.svg"
+                      alt="mongodb"
+                      width={30}
+                      height={30}
+                    />
+                  </li>
+                  <li>
+                    <Image
+                      src="./images/cpp-icon.svg"
+                      alt="mongodb"
+                      width={30}
+                      height={30}
+                    />
+                  </li>
                 </ul>
               </div>
 
               {/* education */}
-              <div>
+              <div className="border shadow-md p-5">
                 <h1 className="text-2xl font-bold mt-10">Education</h1>
                 <p className="text-lg mt-2">
                   I am currently studying at Green University of Bangladesh.
@@ -63,16 +139,23 @@ const AboutPage = () => {
             </div>
 
             {/* contact */}
-            <h1 className="text-2xl font-bold mt-10">Contact</h1>
-            <p className="text-lg mt-2">
-              You can contact me via the following methods:
-            </p>
-            <ul className="mt-2">
-              <li>
-                Email:
-                <a href="mailto:abc@gmail.com ">Send Email</a>
-              </li>
-            </ul>
+            <div className="border shadow-md p-5 rounded-lg">
+              <h1 className="text-2xl font-bold">Contact</h1>
+              <p className="text-md mt-2">
+                You can contact me via the following methods:
+              </p>
+              <ul className="mt-5">
+                <li>
+                  <span>Email: </span>
+                  <a
+                    href="mailto:nazmul0w1@gmail.com"
+                    className="bg-green-400 py-1 px-2 rounded-lg"
+                  >
+                    Send Email
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
