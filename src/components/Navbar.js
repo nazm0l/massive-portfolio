@@ -1,10 +1,14 @@
 "use client";
 import { useState } from "react";
+import { signOut, useSession } from "next-auth/react";
 import Image from "next/image";
 import Link from "next/link";
 
 const Navbar = () => {
   const [navMenu, setNavMenu] = useState(false);
+  const { data: session } = useSession();
+
+  console.log(session);
 
   return (
     <div className="h-[70px] bg-gradient-to-r from-[#ff1e1e] to-[#ff8079] text-white overflow-hidden flex">
@@ -35,7 +39,14 @@ const Navbar = () => {
             <Link href="projects">Projects</Link>
             <Link href="components">Components</Link>
             <Link href="about">About</Link>
-            <Link href="login">Login</Link>
+            {session ? (
+              <>
+                <Link href="profile">{session.user?.name}</Link>
+                <button onClick={() => signOut()}>Logout</button>
+              </>
+            ) : (
+              <Link href="login">Login</Link>
+            )}
           </ul>
         </div>
       </div>
