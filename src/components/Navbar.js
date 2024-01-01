@@ -8,8 +8,6 @@ const Navbar = () => {
   const [navMenu, setNavMenu] = useState(false);
   const { data: session } = useSession();
 
-  console.log(session);
-
   return (
     <div className="h-[70px] bg-gradient-to-r from-[#ff1e1e] to-[#ff8079] text-white overflow-hidden flex">
       <div className="container px-5 mx-auto flex justify-between items-center">
