@@ -4,7 +4,7 @@ import Link from "next/link";
 const HeroSection = () => {
   return (
     <section className="w-full h-96 md:h-[600px] px-5 md:px-0 bg-gradient-to-r from-white to-cyan-200 grid items-center overflow-hidden">
-      <div className="container mx-auto flex justify-between items-center">
+      <div className="container px-5 mx-auto flex justify-between items-center">
         <div>
           <h2 className="text-3xl md:text-6xl font-bold ">
             Find your desired <br /> Web Project

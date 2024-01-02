@@ -18,7 +18,7 @@ const ProjectPage = () => {
         {/* project card here  */}
         <div className="container mx-auto px-5 md:px-0">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-            <Link href="/">
+            <Link href={`/projects/${1}`}>
               <div className="projectCard bg-white rounded-lg shadow-lg">
                 <div className="p-5">
                   <h3 className="text-xl font-bold">Quiz App Bash</h3>
