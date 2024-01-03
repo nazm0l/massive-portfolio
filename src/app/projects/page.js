@@ -6,6 +6,57 @@ export const metadata = {
   description: "Download your favorite projects from Md Najmul Hossen",
 };
 
+const projects = [
+  {
+    id: 1,
+    title: "Quiz App Bash",
+    description:
+      "A quiz app which is build on bash programming. It's a simple quiz app. You can play this game on your terminal.",
+    technologies: [
+      {
+        id: 1,
+        name: "Bash",
+      },
+      {
+        id: 2,
+        name: "Shell",
+      },
+    ],
+  },
+  {
+    id: 2,
+    title: "Shopping Cart",
+    description:
+      "A shopping app which is build on bash programming. It's a simple quiz app. You can play this game on your terminal.",
+    technologies: [
+      {
+        id: 1,
+        name: "C",
+      },
+      {
+        id: 2,
+        name: "Terminal",
+      },
+    ],
+  },
+  {
+    id: 3,
+    title: "Medicine Store",
+    description:
+      "A medicine store app which is build on bash programming. It's a simple quiz app. You can play this game on your terminal.",
+    technologies: [
+      {
+        id: 1,
+        name: "Shell",
+      },
+      {
+        id: 2,
+        name: "Bash",
+      },
+    ],
+  },
+];
+
 const ProjectPage = () => {
   return (
     <>
