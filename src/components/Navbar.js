@@ -33,25 +33,35 @@ const Navbar = () => {
         </button>
         <div className="hidden md:block">
           <ul className="flex gap-10 font-semibold text-lg">
-            <Link href="/">Home</Link>
-            <Link href="projects">Projects</Link>
-            <Link href="components">Components</Link>
-            <Link href="about">About</Link>
+            <Link href="/" className="hover:ring-2 px-3 rounded">
+              Home
+            </Link>
+            <Link href="projects" className="hover:ring-2 px-3 rounded">
+              Projects
+            </Link>
+            <Link href="components" className="hover:ring-2 px-3 rounded">
+              Components
+            </Link>
+            <Link href="about" className="hover:ring-2 px-3 rounded">
+              About
+            </Link>
             {session ? (
               <>
                 <Link href="profile">{session.user?.name}</Link>
                 <button onClick={() => signOut()}>Logout</button>
               </>
             ) : (
-              <Link href="login">Login</Link>
+              <Link href="login" className="hover:ring-2 px-3 rounded">
+                Login
+              </Link>
             )}
           </ul>
         </div>
       </div>
       {/* Mobile Menu */}
-      <div className="w-52 overflow-hidden bg-gray-100 text-black rounded-lg absolute top-20 right-0">
+      <div className="w-52 overflow-hidden bg-gray-100 text-black rounded-lg absolute top-20 right-0 ">
         <div className={navMenu ? "block" : `hidden`}>
-          <ul className="flex flex-col gap-5 font-semibold text-lg p-5">
+          <ul className="flex flex-col gap-5 font-semibold text-lg p-5 transition ease-in-out duration-200">
             <Link href="/">Home</Link>
             <Link href="projects">Projects</Link>
             <Link href="components">Components</Link>

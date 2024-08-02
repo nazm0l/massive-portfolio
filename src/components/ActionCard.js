@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const ActionCard = ({ title }) => {
   return (
-    <div className="group bg-red-200 md:w-80 p-5 mb-2 md:mb-0 rounded-lg hover:bg-red-500 cursor-pointer">
+    <div className="group bg-red-400 md:w-80 p-5 mb-2 md:mb-0 rounded-lg hover:bg-red-500 cursor-pointer">
       <Link href="projects">
         <div className="card-content grid items-center ">
           <h2 className="text-xl md:text-3xl font-bold text-center my-10 group-hover:text-white">

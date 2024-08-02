@@ -6,6 +6,12 @@ const ComponentsPage = () => {
           <h1 className="text-4xl font-bold text-center">Components</h1>
         </div>
       </section>
+      <section className="h-[500px] flex justify-center items-center">
+        <div>
+          {/* under construction */}
+          <p className="text-center text-2xl">Under Construction...</p>
+        </div>
+      </section>
     </>
   );
 };

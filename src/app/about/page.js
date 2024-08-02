@@ -133,7 +133,7 @@ const AboutPage = () => {
                 <ul className="mt-2">
                   <li>Green University of Bangladesh</li>
                   <li>Computer Science and Engineering</li>
-                  <li>2019 - Present</li>
+                  <li>2021 - Present</li>
                 </ul>
               </div>
             </div>
